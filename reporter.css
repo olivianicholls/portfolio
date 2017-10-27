@@ -1,0 +1,18 @@
+body: after {
+	content: 'less than 320px';
+}
+@media only screen and (min-width: 1024px) {
+	body: after {
+		content: '480px to 768px';
+	}
+}
+@media only screen and (min-width: 1024px) {
+	body: after {
+		content: '768px 1024px';
+	}
+}
+@media only screen and (min-width: 1024px) {
+	body: after {
+		content: '1024px and up';
+	}
+}
