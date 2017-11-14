@@ -52,64 +52,54 @@ table {
 	body {
 		margin: 0;
 		font-family: 'Lato', sans-serif;
+		background: rgba(192,36,36,1);
+		background: -moz-linear-gradient(top, rgba(192,36,36,1) 0%, rgba(240,203,53,1) 44%, rgba(110,199,87,1) 74%, rgba(67,198,172,1) 100%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(192,36,36,1)), color-stop(44%, rgba(240,203,53,1)), color-stop(74%, rgba(110,199,87,1)), color-stop(100%, rgba(67,198,172,1)));
+		background: -webkit-linear-gradient(top, rgba(192,36,36,1) 0%, rgba(240,203,53,1) 44%, rgba(110,199,87,1) 74%, rgba(67,198,172,1) 100%);
+		background: -o-linear-gradient(top, rgba(192,36,36,1) 0%, rgba(240,203,53,1) 44%, rgba(110,199,87,1) 74%, rgba(67,198,172,1) 100%);
+		background: -ms-linear-gradient(top, rgba(192,36,36,1) 0%, rgba(240,203,53,1) 44%, rgba(110,199,87,1) 74%, rgba(67,198,172,1) 100%);
+		background: linear-gradient(to bottom, rgba(192,36,36,1) 0%, rgba(240,203,53,1) 44%, rgba(110,199,87,1) 74%, rgba(67,198,172,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c02424', endColorstr='#43c6ac', GradientType=0 );
 	}
 	.navbar {
-		box-shadow: 0 2px 9px #000;
-		height: 60px;
-		position: fixed;
-		top: 0;
-		width: 100%;
-		background: linear-gradient(to bottom, #cccccc 0%,#eeeeee 60%,#efefef 100%);
+
 	}
 	.navbar li {
 		display: inline;
-		padding: 0 20px;
+		padding: 0 7%;
 	}
 	.navbar a {
 		text-decoration: none;
-		color: #000;
+		color: #fff;
 	}
 	.navbar ul {
-		margin: 20px 20px;
-		padding-left: 12%;
+		text-align: center;
+		margin: 20px 10px;
 	}
 	.container {
-		height: 300px;
-		background-image: url('https://thumbs.dreamstime.com/b/vector-seamless-pattern-modern-line-geometric-background-texture-lines-grid-rhombus-nodes-63440786.jpg');
 		width: 100%;
-		margin-top: 60px;
-		border-top: 4px solid #000;
-		border-bottom: 4px solid #000;
 	}
 	.main {
-		width: 100%;
-		height: 300px;
-		display: inline-block;
 		box-sizing: border-box;
-		background: #a90329; /* Old browsers */
-		background: -moz-radial-gradient(center, ellipse cover, #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6-15 */
-		background: -webkit-radial-gradient(center, ellipse cover, #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10-25,Safari5.1-6 */
-		background: radial-gradient(ellipse at center, #a90329 0%,#8f0222 44%,#6d0019 100%);
-		border-left: 4px solid #000;
-		border-right: 4px solid #000;
 		color: #fff;
 		text-align: center;
-		font-weight: 100;
-		text-shadow: 1px 1px 3px #000;
+
+	}
+	.heading {
+		height: 50%;
+		margin: 190px 10px;
 	}
 	.heading h1 {
-		font-size: 50px;
+		font-size: 100px;
 		margin: 30px;
+		font-family: 'Josefin Sans', sans-serif;
+		display: none;
 	}
 	.heading h3 {
-		font-size: 20px;
-		margin: 20px;
-	}
-	.headshot img {
-		margin-top: 20px;
-		height: 100px;
-		border-radius: 50%;
-		border: 1px solid #000;
+		padding-top: 50px;
+		font-size: 40px;
+		font-weight: 100;
+		display: none;
 	}
 	.skills-list {
 		margin: 20px;
@@ -118,44 +108,61 @@ table {
 		font-weight: bold;/* REVIEW: Change font weight */
 		text-decoration: underline;
 	}
+	.skills-left {
+		float: left;
+		margin-right: 30px;
+	}
 	.skill {
 		font-size: 16px;
-		display: inline-block;
 	}
 	.bio {
+		font-size: 20px;
+		line-height: 1.5;
+		margin: 0 8%;
+		margin-top: 300px;
+		width: 70%;
+		border-radius: 3px;
 		padding: 40px;
-		border-bottom: 4px solid #000;
+		background-color: #fff;
+		box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
 	}
 	.projects {
-		position: relative;
-		top: 60px;
-		padding: 40px;
+		margin: 100px 0;
 	}
 	.projects p {
 		text-align: center;
+		color: #fff;
+		font-size: 40px;
+		margin: 20px;
+	}
+	.project {
+		margin: 3% 8%;
+		padding: 40px;
+		background-color: #fff;
+		border-radius: 3px;
+		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+		width: 70%;
+		height: 160px;
+
+		/*display: inline-block;*/
 	}
 }
 @media only screen and (min-width: 480px) {
-	.container {
-		height: 390px;
-	}
 	.navbar ul {
-		float: right;
+		/*float: right;*/
 	}
 	.main {
-		margin-left: 28%;
-		width: 45%;
-		min-width: 280px;
-		height: 390px;
+		/*margin-left: 28%;
+		min-width: 280px;*/
 	}
 }
 @media only screen and (min-width: 812px) {
-	.heading {
+	/*.heading {
 		margin: 40px 0;
 	}
 	.heading h3 {
 		margin-top: 30px;
-	}
+	}*/
 	.headshot img {
 		height: 130px;
 	}
