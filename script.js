@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
-$('.heading').fadeIn(1000);
+$('h1').fadeIn(1500);
+$('h3').fadeIn(2800);
 
 
 $('.menu-btn').click(function() {
