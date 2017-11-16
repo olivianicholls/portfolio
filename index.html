@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <link href='style.css' type='text/css' rel='stylesheet'>
 <link href='reporter.css' type='text/css' rel='stylesheet'>
+<link href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' rel='stylesheet'>
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600|Lato:100,300" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src='script.js'></script>
@@ -12,11 +13,15 @@
 <body>
   <nav class='navbar'>
     <ul>
-      <li><a href='#'>ABOUT</a></li>
-      <li><a href='#'>PROJECTS</a></li>
-      <li><a href='#'>CONTACT</a></li>
+      <li><a href='#about'>ABOUT</a></li>
+      <li><a href='#projects'>PROJECTS</a></li>
+      <li><a href='#contact'>CONTACT</a></li>
     </ul>
   </nav>
+  <div class='menu-btn'>
+    <i class='ion ion-navicon'></i>
+    <p class='menu'>MENU</p>
+</div>
 <div class='container'>
 <header class='heading'>
 <div class='main'>
@@ -24,20 +29,18 @@
 <h3>Front End Developer</h3>
 </div>
 </header>
-<section class='bio'>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</article>
-</aside>
+<section class='bio' id='about'>
+  <p>Hi there! My name is Olivia and welcome to my website. Originally from Toronto, Canada, I moved to sunny Leeds, UK in 2016 after graduating university with a history degree. As much as I love history, it wasn't the career for me. Once I discovered web development, I was hooked. I love meeting of functionality with creativity, and web development provides just that. Currently I work in HTML, CSS, JavaScript, and jQuery. Though I am pretty new to the game, I have a real passion for web development and I am eager to develop my skills further and learn more. If you'd like to connect, feel free to hit me up. I would love to chat with you!</p>
 </section>
-<section class='projects'>
+<section class='projects' id='projects'>
   <p>Projects</p>
   <div class='projects-wrapper'>
   <div class='project'>
-  <img class='thumbnail' src='' />
+  <img class='thumbnail' src='etchasketch_thumbnail.png' />
   <h5>Etch-A-Sketch</h5>
   </div>
   <div class='project'>
-  <img class='thumbnail' src='' />
+  <img class='thumbnail' src='calculator_thumbnail.png' />
   <h5>On-Screen Calculator</h5>
   </div>
   <div class='project'>
@@ -48,7 +51,7 @@
   </div>
   </div>
 </section>
-<section class='contact'>
+<section class='contact' id='contact'>
 <p>Contact Me</p>
 </section>
 </div>
