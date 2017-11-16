@@ -5,6 +5,7 @@ $('h3').fadeIn(2800);
 
 
 $('.menu-btn').click(function() {
-$('.menu').slideToggle();
+$('.navbar').slideToggle();
+
 });
 });
