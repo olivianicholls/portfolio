@@ -54,7 +54,7 @@ table {
 		background: rgba(192,36,36,1);
 		background: -moz-linear-gradient(top, rgba(192,36,36,1) 0%, rgba(240,203,53,1) 44%, rgba(110,199,87,1) 74%, rgba(67,198,172,1) 100%);
 		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(192,36,36,1)), color-stop(44%, rgba(240,203,53,1)), color-stop(74%, rgba(110,199,87,1)), color-stop(100%, rgba(67,198,172,1)));
-		background: -webkit-linear-gradient(top, rgba(192,36,36,1) 0%, rgba(240,203,53,1) 44%, rgba(110,199,87,1) 74%, rgba(67,198,172,1) 100%);
+		background: -webkit-linear-gradient(top, rgba(192,36,36,1) 0%, rgba(240,203,53,1) 100% rgba(110,199,87,1) 74%, rgba(67,198,172,1) 100%);
 		background: -o-linear-gradient(top, rgba(192,36,36,1) 0%, rgba(240,203,53,1) 44%, rgba(110,199,87,1) 74%, rgba(67,198,172,1) 100%);
 		background: -ms-linear-gradient(top, rgba(192,36,36,1) 0%, rgba(240,203,53,1) 44%, rgba(110,199,87,1) 74%, rgba(67,198,172,1) 100%);
 		background: linear-gradient(to bottom, rgba(192,36,36,1) 0%, rgba(240,203,53,1) 44%, rgba(110,199,87,1) 74%, rgba(67,198,172,1) 100%);
@@ -100,24 +100,10 @@ table {
 		font-weight: 100;
 		display: none;
 	}
-	.skills-list {
-		margin: 20px;
-	}
-	.skills-list h4 {
-		font-weight: bold;/* REVIEW: Change font weight */
-		text-decoration: underline;
-	}
-	.skills-left {
-		float: left;
-		margin-right: 30px;
-	}
-	.skill {
-		font-size: 16px;
-	}
 	.bio {
 		font-size: 20px;
 		line-height: 1.5;
-		margin: 0 8%;
+		margin: 0 auto;
 		margin-top: 300px;
 		width: 70%;
 		border-radius: 3px;
@@ -128,18 +114,15 @@ table {
 	.projects {
 		font-size: 20px;
 		line-height: 1.5;
-		margin: 0 8%;
 		margin-top: 300px;
-		width: 70%;
 		border-radius: 3px;
-		padding: 40px;
-		box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
 	}
 	.projects p {
 		text-align: center;
 		color: #fff;
 		font-size: 40px;
-		margin: 20px;
+		margin: 40px 0;
+
 	}
 	.project {
 		margin: 3% 8%;
@@ -149,8 +132,27 @@ table {
 		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 		width: 70%;
 		height: 160px;
-
-		/*display: inline-block;*/
+	}
+	.thumbnail {
+		height: 200px;
+		width: 200px;
+		background-color: #ddd;
+		float: left;
+		margin: 40px;
+	}
+	.project h5{
+		margin: 40px 0;	
+	}
+	}
+	.contact {
+		background-color: #fff;
+		height: 600px;
+		color: rgba(192,36,36,1);
+		margin-top: 500px;
+	}
+	.contact p {
+		font-size: 40px;
+		text-align: center;
 	}
 }
 @media only screen and (min-width: 480px) {
@@ -172,17 +174,14 @@ table {
 	.headshot img {
 		height: 130px;
 	}
-	.skills-list {
-		margin: 40px;
-	}
 	.bio {
 		padding: 40px 120px;
 	}
 	.projects-wrapper {
 		height: 500px;
+		margin-left: 70px;
 	}
 	.projects {
-		padding: 40px 120px;
 		height: 600px;
 	}
 	.project {
@@ -191,6 +190,7 @@ table {
 		width: 46%;
 		margin: 10px 10px;
 		padding: 0;
+		height: 400px;
 	}
 }
 @media only screen and (min-width: 1024px) {
@@ -198,35 +198,3 @@ table {
 	font-size: 38px;
 }
 }
-/*.heading h1 {
-	font-size: 64px;
-	margin-bottom: 70px;
-}
-.bio {
-	background-color: #efefef;
-	border-bottom: 4px solid #000;
-	height: 390px;
-	position: relative;
-	top: 60px;
-}
-.bio p {
-	color: #000;
-	font-size: 16px;
-	margin: 0 auto;
-	max-width: 1000px;
-	text-align: justify;
-	padding: 50px 0;
-}
-.projects {
-	background-color: #efefef;
-	height: 390px;
-	position: relative;
-	top: 60px;
-}
-.projects p {
-	text-align: center;
-	color: #000;
-	font-size: 30px;
-	font-weight: 100;
-	padding: 20px;
-}*/
