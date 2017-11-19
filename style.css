@@ -60,24 +60,30 @@ table {
 		background: linear-gradient(to bottom, rgba(126,199,217,1) 0%, rgba(245,225,159,1) 41%, rgba(227,179,120,1) 72%, rgba(222,141,42,1) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ec7d9', endColorstr='#de8d2a', GradientType=0 );
 	}
+	a {
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
 	.menu-btn {
 		position: fixed;
 		top: 0;
 		background-color: #112d59;
-		width: 120px;
+		width: 105px;
 		margin-left: 10px;
-		height: 60px;
+		height: 50px;
 		border-radius: 0 0 5px 5px;
 	}
 	.ion-navicon {
-		font-size: 30px;
-		margin: 10px;
-		padding-left: 10px;
+		font-size: 24px;
+		margin: 10px 5px 10px 10px;
+		padding-left: 6px;
 		color: #fff;
 	}
 	.menu {
 		position: relative;
-		bottom: 5px;
+		bottom: 4px;
 		height: 50px;
 		display: inline-block;
 		text-decoration: none;
@@ -89,7 +95,7 @@ table {
 		top: 0;
 		width: 100%;
 		background-color: #112d59;
-		height: 60px;
+		height: 50px;
 	}
 	.navbar li {
 		display: inline;
@@ -101,7 +107,7 @@ table {
 	}
 	.navbar ul {
 		text-align: center;
-		margin: 20px 10px;
+		margin: 14px 10px;
 	}
 	.container {
 		width: 100%;
@@ -129,7 +135,7 @@ table {
 		display: none;
 	}
 	.bio {
-		text-align: justify;
+		text-align: center;
 		font-size: 23px;
 		line-height: 2;
 		margin: 0 auto;
@@ -145,7 +151,7 @@ table {
 		margin-top: 200px;
 		border-radius: 3px;
 	}
-	.projects p {
+	.projects h2 {
 		text-align: center;
 		color: #112d59;
 		font-family: 'Josefin Sans', sans-serif;
@@ -158,7 +164,7 @@ table {
 		padding: 40px;
 		background-color: #fff;
 		border-radius: 3px;
-		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 		width: 85%;
 		height: 160px;
 	}
@@ -175,17 +181,7 @@ table {
 	.project h5{
 		margin: 40px 0;
 	}
-	}
-	.contact {
-		height: 600px;
-		color: #112d59;
-		margin-top: 500px;
-	}
-	.contact p {
-		font-family: 'Josefin Sans', sans-serif;
-		font-size: 40px;
-		text-align: center;
-	}
+
 }
 @media only screen and (min-width: 480px) {
 	.navbar ul {
@@ -200,20 +196,109 @@ table {
 	.headshot img {
 		height: 130px;
 	}
+	.bio h2, .languages h2, .projects h2, .contact h2 {
+		color: #112d59;
+		margin: 80px 0;
+		font-family: 'Josefin Sans', sans-serif;
+		font-size: 40px;
+		text-align: center;
+	}
 	.bio {
+		text-align: justify;
 		padding: 40px 120px;
+	}
+	.languages {
+		margin: 40px 0;
+	}
+	.language-icons {
+		margin-top: 130px;
+		font-size: 60px;
+		color: #112d59;
+		text-align: center;
+	}
+	.language-icons i {
+		padding: 0 40px;
+	}
+	#jquery {
+		display: inline;
+	}
+	#jquery img {
+		height: 80px;
+		vertical-align: text-top;
 	}
 	.projects-wrapper {
 		margin-left: 170px;
-	}
-	.projects {
-
 	}
 	.project {
 		display:inline-block;
 		margin: 10px 10px;
 		padding: 0;
-		height: 400px;
+		height: 300px;
+	}
+	.thumbnail {
+		height: 200px;
+		width: 200px;
+		background-color: #ddd;
+		float: left;
+		margin: 40px;
+		border-radius: 3px;
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+	}
+	.project h5{
+		margin: 40px 0;
+	}
+	.project p {
+		font-size: 17px;
+		margin-right: 58px;
+		color: #112d59;
+	}
+	.project a{
+		font-weight: 600;
+		color: #112d59;
+	}
+	.github-link a {
+		position: relative;
+		bottom: -50px;
+		font-size: 15px;
+		color: #112d59;
+	}
+	.contact {
+		color: #112d59;
+		margin: 0 auto;
+		max-width: 1000px;
+	}
+	#contact-msg {
+		text-align: center;
+		font-size: 20px;
+		margin: 80px 220px;
+	}
+	.email  {
+		text-align: center;
+	}
+	.email a {
+		color: #112d59;
+		font-size: 20px;
+	}
+	.social {
+		text-align: center;
+		margin-top: 80px;
+	}
+	.social a {
+		padding: 0 10px;
+		margin: 30px;
+		font-size: 44px;
+		color: #112d59;
+	}
+	.social-titles {
+		text-align: center;
+		font-size: 16px;
+		margin: 20px 0;
+	}
+	.social-titles a {
+		color: #112d59;
+		padding: 0 30px;
+		margin-bottom: 100px;
+		display: inline-block;
 	}
 	.disclaimer p {
 		font-size: 13px;
@@ -221,12 +306,5 @@ table {
 		text-align: center;
 		margin: 20px;
 	}
-	.menu-down {
-		margin-top: 60px;
-	}
 }
 @media only screen and (min-width: 1024px) {
-.heading {
-	font-size: 38px;
-}
-}
