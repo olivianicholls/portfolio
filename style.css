@@ -119,8 +119,7 @@ table {
 
 	}
 	.heading {
-		height: 50%;
-		margin: 190px 10px;
+		
 	}
 	.heading h1 {
 		font-size: 100px;
@@ -193,8 +192,8 @@ table {
 	}
 }
 @media only screen and (min-width: 812px) {
-	.headshot img {
-		height: 130px;
+	.heading {
+		margin: 300px 10px;
 	}
 	.bio h2, .languages h2, .projects h2, .contact h2 {
 		color: #112d59;
