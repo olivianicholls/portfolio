@@ -47,7 +47,7 @@ table {
 	border-spacing: 0;
 }
 /*Original Code*/
-@media only screen and (min-width: 320px) {
+/* @media only screen and (min-width: 320px) { */
 	body {
 		margin: 0;
 		font-family: 'Lato', sans-serif;
@@ -66,6 +66,7 @@ table {
 	a:hover {
 		text-decoration: underline;
 	}
+	/* Navigation */
 	.menu-btn {
 		position: fixed;
 		top: 0;
@@ -109,92 +110,28 @@ table {
 		text-align: center;
 		margin: 14px 10px;
 	}
-	.container {
-		width: 100%;
-	}
+	/* Heading */
 	.main {
 		box-sizing: border-box;
 		color: #fff;
 		text-align: center;
-
 	}
 	.heading {
-		
+		margin: 300px 10px;
 	}
 	.heading h1 {
 		font-size: 100px;
-		margin: 30px;
 		font-family: 'Josefin Sans', sans-serif;
 		display: none;
 	}
 	.heading h3 {
 		padding-top: 50px;
+		margin-left: 20px;
 		font-size: 40px;
 		font-weight: 100;
 		display: none;
 	}
-	.bio {
-		text-align: center;
-		font-size: 23px;
-		line-height: 2;
-		margin: 0 auto;
-		margin-top: 300px;
-		width: 70%;
-		border-radius: 3px;
-		padding: 40px;
-		color: #112d59;
-	}
-	.projects {
-		font-size: 20px;
-		line-height: 1.5;
-		margin-top: 200px;
-		border-radius: 3px;
-	}
-	.projects h2 {
-		text-align: center;
-		color: #112d59;
-		font-family: 'Josefin Sans', sans-serif;
-		font-size: 40px;
-		margin: 40px 0;
-
-	}
-	.project {
-		margin: 3% 8%;
-		padding: 40px;
-		background-color: #fff;
-		border-radius: 3px;
-		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-		width: 85%;
-		height: 160px;
-	}
-	.thumbnail {
-		height: 200px;
-		width: 200px;
-		background-color: #ddd;
-		float: left;
-		margin: 40px;
-		border-radius: 3px;
-		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-
-	}
-	.project h5{
-		margin: 40px 0;
-	}
-
-}
-@media only screen and (min-width: 480px) {
-	.navbar ul {
-		/*float: right;*/
-	}
-	.main {
-		/*margin-left: 28%;
-		min-width: 280px;*/
-	}
-}
-@media only screen and (min-width: 812px) {
-	.heading {
-		margin: 300px 10px;
-	}
+	/* Section Headings */
 	.bio h2, .languages h2, .projects h2, .contact h2 {
 		color: #112d59;
 		margin: 80px 0;
@@ -202,10 +139,20 @@ table {
 		font-size: 40px;
 		text-align: center;
 	}
+	/* Bio Section */
 	.bio {
 		text-align: justify;
+		font-size: 23px;
+		line-height: 2;
+		color: #112d59;
+		margin: 0 auto;
 		padding: 40px 120px;
+		width: 70%;
 	}
+	.bio p {
+		margin: 0 20px;
+	}
+	/* Languages Section */
 	.languages {
 		margin: 40px 0;
 	}
@@ -225,12 +172,23 @@ table {
 		height: 80px;
 		vertical-align: text-top;
 	}
+	/* Projects Section*/
 	.projects-wrapper {
 		margin-left: 170px;
 	}
+	.projects {
+		font-size: 20px;
+		line-height: 1.5;
+		margin-top: 200px;
+		border-radius: 3px;
+	}
 	.project {
+		background-color: #fff;
+		border-radius: 3px;
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+		width: 85%;
 		display:inline-block;
-		margin: 10px 10px;
+		margin: 10px 0;
 		padding: 0;
 		height: 300px;
 	}
@@ -244,10 +202,10 @@ table {
 		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 	}
 	.project h5{
-		margin: 40px 0;
+		margin: 40px 0 10px 0;
 	}
 	.project p {
-		font-size: 17px;
+		font-size: 20px;
 		margin-right: 58px;
 		color: #112d59;
 	}
@@ -257,10 +215,10 @@ table {
 	}
 	.github-link a {
 		position: relative;
-		bottom: -50px;
+		top: 70px;
 		font-size: 15px;
-		color: #112d59;
 	}
+	/* Contact Section */
 	.contact {
 		color: #112d59;
 		margin: 0 auto;
@@ -305,5 +263,3 @@ table {
 		text-align: center;
 		margin: 20px;
 	}
-}
-@media only screen and (min-width: 1024px) {
