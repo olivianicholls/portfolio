@@ -169,8 +169,8 @@ table {
 		display: inline;
 	}
 	#jquery img {
-		height: 80px;
-		vertical-align: text-top;
+		height: 55px;
+		vertical-align: bottom;
 	}
 	/* Projects Section*/
 	.projects-wrapper {
@@ -216,7 +216,7 @@ table {
 	.github-link a {
 		position: relative;
 		top: 70px;
-		font-size: 15px;
+		font-size: 20px;
 	}
 	/* Contact Section */
 	.contact {
@@ -224,17 +224,24 @@ table {
 		margin: 0 auto;
 		max-width: 1000px;
 	}
+	.contact h2 {
+		margin-bottom: 0;
+	}
 	#contact-msg {
 		text-align: center;
-		font-size: 20px;
-		margin: 80px 220px;
+		font-size: 23px;
+		line-height: 2;
+		color: #112d59;
+		margin: 0 auto;
+		padding: 40px 120px;
+		width: 70%;
 	}
 	.email  {
 		text-align: center;
 	}
 	.email a {
 		color: #112d59;
-		font-size: 20px;
+		font-size: 23px;
 	}
 	.social {
 		text-align: center;
@@ -248,7 +255,7 @@ table {
 	}
 	.social-titles {
 		text-align: center;
-		font-size: 16px;
+		font-size: 20px;
 		margin: 20px 0;
 	}
 	.social-titles a {
@@ -258,7 +265,7 @@ table {
 		display: inline-block;
 	}
 	.disclaimer p {
-		font-size: 13px;
+		font-size: 15px;
 		color: #112d59;
 		text-align: center;
 		margin: 20px;
