@@ -4,7 +4,7 @@
   <meta charset='utf-8'/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Olivia Nicholls</title>
-  <link href='style.css' type='text/css' rel='stylesheet'>
+  <link href='styles.css' type='text/css' rel='stylesheet'>
   <link href='reporter.css' type='text/css' rel='stylesheet'>
   <link href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" type="text/css" href="css/theme/jquery-ui-1.12.icon-font.min.css" />
@@ -15,9 +15,12 @@
 <body>
   <nav class='navbar'>
     <ul>
-      <li><a href='#about'>ABOUT</a></li>
-      <li><a href='#projects'>PROJECTS</a></li>
-      <li><a href='#contact'>CONTACT</a></li>
+      <li class='navbar-text'><a href='#projects' class="scroll">PROJECTS</a></li>
+      <li class='navbar-icon'><a href='#projects' class="scroll"><i class='ion ion-briefcase'></i></a></li>
+      <li class='navbar-text'><a href='#about' class="scroll">ABOUT</a></li>
+      <li class='navbar-icon'><a href='#about' class="scroll"><i class='ion ion-person'></i></a></li>
+      <li class='navbar-text'><a href='#contact' class="scroll">CONTACT</a></li>
+      <li class='navbar-icon'><a href='#contact' class="scroll"><i class='ion ion-ios-chatboxes'></i></a></li>
     </ul>
   </nav>
   
@@ -36,93 +39,145 @@
         <h3>Front End Developer</h3>
       </div>
     </header>
-  
-  <section class='projects' id='projects'>
-  <h2>Projects</h2>
-  <div class='projects-wrapper'>
-    <!--Todolist-->
-    <article class='project'>
-      <a href='https://olivianicholls.github.io/todolist/' target="_blank">
-        <img class='thumbnail' src='photos/todolist_thumbnail.png' />
-      </a>
-      <div class='project-text-wrapper'>
-      <a class='project-title' href='https://olivianicholls.github.io/todolist/' target="_blank">To Do List</a>
-        <p>A simple To Do list made partly while following <a href='https://watchandcode.com/p/practical-javascript' target='_blank'>Watch and Code's Practical Javascript</a> course, then making my own modifications once finished the course. Made using HTML, CSS and Vanilla JS</p>
-      </div>
-      <div class='github-link'>
-        <a href='https://github.com/olivianicholls/todolist' target="_blank">GitHub</a>
-      </div>
-    </article>
-    <!--Portfolio-->
-    <article class='project'>
-      <a href='https://olivianicholls.github.io/portfolio/' target="_blank">
-        <img class='thumbnail' src='photos/portfolio_thumbnail.png' />
-      </a>
-      <div class='project-text-wrapper'>
-      <a class='project-title' href='https://olivianicholls.github.io/portfolio/' target="_blank">Portfolio Page</a>
-        <p>This website you see here! Made using HTML, CSS, and jQuery.</p>
-      </div>
-      <div class='github-link'>
-        <a href='https://github.com/olivianicholls/portfolio' target="_blank">GitHub</a>
-      </div>
-    </article>
-    <!--Calculator-->
-    <article class='project'>
-      <a href='https://olivianicholls.github.io/calculator/' target="_blank">
-        <img class='thumbnail' src='photos/calculator_thumbnail.png' />
-      </a>
-      <div class='project-text-wrapper'>
-        <a class='project-title' href='https://olivianicholls.github.io/calculator/' target="_blank">On-Screen Calculator</a>
-        <p>A simple app featuring a functional calculator. Written with HTML, CSS, JavaScript, and jQuery. Made as a project from <a href='https://www.theodinproject.com/courses/javascript-and-jquery/lessons/on-screen-calculator'>The Odin Project</a>'s curriculum.</p
-      </div>
-      <div class='github-link'>
-        <a href='https://github.com/olivianicholls/calculator' target="_blank">GitHub</a>
+    
+    <section class='projects' id='projects'>
+    <h2>Projects</h2>
+    <div class='projects-wrapper'>
+      <!--Todolist-->
+      <article class='project'>
+        <div class='links-wrapper'>
+          <a href='https://olivianicholls.github.io/todolist/' target="_blank">
+            <div class='image-wrapper'>
+              <img class='thumbnail' src='todolist_thumbnail.png' />
+            </div>
+          </a>
+          <div class='github-link'>
+            <a href='https://github.com/olivianicholls/todolist' target="_blank">GitHub</a>
+          </div>
+          <div class='github-link-icon'>
+            <a href='https://github.com/olivianicholls/todolist' target="_blank">
+              <i class="ion ion-social-github"></i>
+            </a>
+          </div>
         </div>
-        </article>
+        <div class='project-text-wrapper'>
+          <div class='project-title-wrapper'>
+            <a class='project-title' href='https://olivianicholls.github.io/todolist/' target="_blank">To Do List</a>
+          </div>
+          <p>A dynamic To Do list made partly while following <a href='https://watchandcode.com/p/practical-javascript' target='_blank'>Watch and Code's Practical Javascript</a> course, then making my own modifications once finished the course. Made using HTML, CSS and Vanilla JS</p>
+        </div>
+      </article>
+      <!--Portfolio-->
+      <article class='project'>
+        <div class='links-wrapper'>
+        <a href='https://olivianicholls.github.io/portfolio/' target="_blank">
+          <div class='image-wrapper'>
+          <img class='thumbnail' src='portfolio_thumbnail.png' />
+          </div>
+        </a>
+        <div class='github-link'>
+          <a href='https://github.com/olivianicholls/portfolio' target="_blank">GitHub</a>
+        </div>
+          <div class='github-link-icon'>
+            <a href='https://github.com/olivianicholls/portfolio' target="_blank">
+              <i class="ion ion-social-github"></i>
+            </a>
+          </div>
+         </div>
+        <div class='project-text-wrapper'>
+          <div class='project-title-wrapper'>
+          <a class='project-title' href='https://olivianicholls.github.io/portfolio/' target="_blank">Portfolio Page</a>
+          </div>
+          <p>This website you see here! Made using HTML, CSS, and jQuery.</p>
+        </div>
+      </article>
+      <!--Calculator-->
+      <article class='project'>
+        <div class='links-wrapper'>
+          <a href='https://olivianicholls.github.io/calculator/' target="_blank">
+          <div class='image-wrapper'>
+          <img class='thumbnail' src='calculator_thumbnail.png' />
+           </div>
+        </a>
+        <div class='github-link'>
+          <a href='https://github.com/olivianicholls/calculator' target="_blank">GitHub</a>
+        </div>
+          <div class='github-link-icon'>
+            <a href='https://github.com/olivianicholls/calculator' target="_blank">
+              <i class="ion ion-social-github"></i>
+            </a>
+          </div>
+         </div>
+        <div class='project-text-wrapper'>
+          <div class='project-title-wrapper'>
+          <a class='project-title' href='https://olivianicholls.github.io/calculator/' target="_blank">On-Screen Calculator</a>
+            </div>
+          <p>A simple app featuring a functional calculator. Written with HTML, CSS, JavaScript, and jQuery. Made as a project from <a href='https://www.theodinproject.com/courses/javascript-and-jquery/lessons/on-screen-calculator'>The Odin Project</a>'s curriculum.</p>
+        </div>
+      </article>
       <!--Etch-A-Sketch-->
       <article class='project'>
+        <div class='links-wrapper'>
         <a href='https://olivianicholls.github.io/etch-a-sketch/' target="_blank">
-          <img class='thumbnail' src='photos/etchasketch_thumbnail.png' />
+          <div class='image-wrapper'>
+          <img class='thumbnail' src='etchasketch_thumbnail.png' />
+            </div>
         </a>
-        <div class='project-text-wrapper'>
-          <a class='project-title' href='https://olivianicholls.github.io/etch-a-sketch/' target="_blank">Etch-A-Sketch</a>
-          <p>A simple app emulating the classic children's toy. Written with HTML, CSS, JavaScript, and jQuery. Made as a project from <a href='https://www.theodinproject.com/courses/web-development-101/lessons/javascript-and-jquery'>The Odin Project</a>'s curriculum.</p>
-        </div>
         <div class='github-link'>
           <a href='https://github.com/olivianicholls/etch-a-sketch' target="_blank">GitHub</a>
         </div>
-      </article> 
-      </div>
+          <div class='github-link-icon'>
+            <a href='https://github.com/olivianicholls/etch-a-sketch' target="_blank">
+              <i class="ion ion-social-github"></i>
+            </a>
+          </div>
+         </div>
+        <div class='project-text-wrapper'>
+          <div class='project-title-wrapper'>
+          <a class='project-title' href='https://olivianicholls.github.io/etch-a-sketch/' target="_blank">Etch-A-Sketch</a>
+          </div>
+          <p>A simple app emulating the classic children's toy. Written with HTML, CSS, JavaScript, and jQuery. Made as a project from <a href='https://www.theodinproject.com/courses/web-development-101/lessons/javascript-and-jquery'>The Odin Project</a>'s curriculum.</p>
+        </div>
+      </article>
+    </div>
     </section>
-  
-  <section class='languages'>
-    <h2>What I Use</h2>
-    <div class='language-icons'>
-      <div class='icon-wrapper'>
-        <i class='language-icon ion ion-social-html5-outline'></i>
-          <p id='html'>HTML</p> 
-      </div>
-      <div class='icon-wrapper'>
-        <i class='language-icon ion ion-social-css3-outline'></i>
-        <p id='css'>CSS</p>
-      </div>
-      <div class='icon-wrapper'>
-        <i class='language-icon ion ion-social-javascript-outline'></i>
-        <p id='js'>JavaScript</p>
-      </div>
-      <div id='jquery'>
+    
+    <section class='languages'>
+      <h2>What I Use</h2>
+      <div class='language-icons'>
         <div class='icon-wrapper'>
-          <img src='http://flaticons.net/gd/makefg.php?i=icons/Brand%20Identity/Logo-JQuery.png&r=255&g=255&b=255'>
-          <p>jQuery</p>
+          <i class='language-icon ion ion-social-html5-outline'></i>
+          <div class='language-names'>
+          <p id='html'>HTML</p>
+          </div>
+        </div>
+        <div class='icon-wrapper'>
+          <i class='language-icon ion ion-social-css3-outline'></i>
+          <div class='language-names'>
+            <p id='css'>CSS</p>
+            </div>
+        </div>
+        <div class='icon-wrapper'>
+          <i class='language-icon ion ion-social-javascript-outline'></i>
+          <div class='language-names'>
+          <p id='js'>JavaScript</p>
+          </div>
+        </div>
+        <div id='jquery'>
+          <div class='icon-wrapper'>
+            <img src='http://flaticons.net/gd/makefg.php?i=icons/Brand%20Identity/Logo-JQuery.png&r=255&g=255&b=255'>
+            <div class='language-names'>
+            <p>jQuery</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  
-  <section class='bio' id='about'>
-    <h2>About Me</h2>
-    <p>I am a self-taught developer, working with front-end languages such as HTML, CSS, and JavaScript. Originally from Toronto, Canada, I have lived in Leeds, UK since 2016. I enjoy working through problems to come up with innovative, simple solutions and am eager to develop my skills further and learn more.</p>
-  </section>
+    </section>
+    
+    <section class='bio' id='about'>
+      <h2>About Me</h2>
+      <p>I am a self-taught developer, working with front-end languages such as HTML, CSS, and JavaScript. Originally from Toronto, Canada, I have lived in Leeds, UK since 2016. I enjoy working through problems to come up with innovative, simple solutions and am eager to develop my skills further and learn more.</p>
+    </section>
     
     <section class='contact' id='contact'>
       <h2>Contact Me</h2>
@@ -143,8 +198,8 @@
     </section>
     
     <footer class='disclaimer'>
-      <p>Coded and Designed by Olivia Nicholls, 2017</p>
+      <p>Designed, Coded, and Constantly Being Updated by Olivia Nicholls</p>
     </footer>
-    </div>
-    </body>
-  </html>
+  </div>
+  </body>
+</html>
