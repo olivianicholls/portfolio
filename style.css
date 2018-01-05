@@ -60,8 +60,13 @@ table {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#89c254', endColorstr='#00afd6', GradientType=1 );
     background-attachment: fixed;
 }
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+
 a{
-  text-decoration: none;
+ text-decoration: none;
 }
 a:hover {
   text-decoration: underline;
@@ -128,7 +133,7 @@ li.navbar-icon {
 	text-align: center;
 }
 .heading {
-	margin: 300px 10px;
+	margin: 300px 0;
 }
 .heading h1 {
 	font-size: 140px;
@@ -504,8 +509,19 @@ a.project-title {
   .heading h1 {
     font-size: 70px;
   }
+  .projects-wrapper {
+    width: 90%;
+  }
+  .project {
+    width: 97%;
+  }
   .thumbnail {
     margin: 20px 0;
+  }
+  .github-link-icon {
+    left: 0;
+    display: inline;
+    padding-left: 10px;
   }
   #jquery {
     margin-right: 21px;
@@ -528,6 +544,11 @@ a.project-title {
   }
   .language-icons {
     margin: 0 15%;
+    width: 95%;
+    padding: 0;
+  }
+  #css-icon {
+    padding-left: 15px;
   }
 }
 
@@ -549,20 +570,14 @@ a.project-title {
   }
 }
 
-@media (max-width: 320px) {
-  .heading h1 {
+@media (max-width:350px) {
+.language-icons {
+    margin: 0 5%;
+  }
+    .heading h1 {
     font-size: 60px;
   }
   .heading h3 {
     font-size: 30px;
-  }
-  .projects-wrapper {
-    
-    margin: 0 4%;
-  }
-  .github-link-icon {
-    left: 0;
-    display: inline;
-    padding-left: 10px;
   }
 }
