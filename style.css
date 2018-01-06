@@ -152,6 +152,21 @@ li.navbar-icon {
 	font-size: 40px;
 	text-align: center;
 }
+
+/* h2 {
+  animation-duration: 3s;
+  animation-name: underline;
+}
+
+@keyframes underline {
+  from {
+    text-decoration: none; 
+  }
+
+  to {
+    text-decoration: underline;
+  }
+} */
 /* Bio Section */
 .bio {
 	text-align: justify;
@@ -166,14 +181,13 @@ li.navbar-icon {
 	margin: 0 20px;
 }
 /* Languages Section */
-
-.language-icons {
+#languages-wrapper {
   padding: 60px 0;
 	font-size: 90px;
 	color: #fff;
 	text-align: center;
 }
-.language-icons i {
+#languages-wrapper i {
 	padding: 0 40px;
 }
 .icon-wrapper {
@@ -193,23 +207,17 @@ li.navbar-icon {
   padding-left: 15px;
 }
 #jquery {
-	display: inline-block;
-}
-#jquery img {
 	height: 85px;
-	vertical-align: bottom;
   float: left;
-  margin-left: 40px;
+  position: relative;
+  left: 40px;
 }
-#jquery p {
+#jquery-text{
   clear: left;
   padding: 14px 0 0 40px;
 }
 
 /* Projects Section*/
-.projects-wrapper {
-	margin-left: 170px;
-}
 .projects {
 	font-size: 20px;
   line-height: 1.5;
@@ -221,8 +229,7 @@ li.navbar-icon {
 	border-radius: 3px;
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 	width: 85%;
-	display:inline-block;
-	margin: 10px 0;
+	margin: 20px auto;
   overflow: -webkit-paged-y;
   padding-right: 10px;
 }
@@ -324,11 +331,6 @@ a.project-title {
 
 
 
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
 @media (max-width: 1554px) {
 .links-wrapper {
     width: 26%;
@@ -344,9 +346,6 @@ a.project-title {
   .projects-wrapper {
     width: 90%;
     margin: 0 auto;
-  }
-  .project {
-    width: 100%;
   }
 }
 
@@ -374,7 +373,7 @@ a.project-title {
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   
-  //CSS
+  
   
 }
 
@@ -385,7 +384,7 @@ a.project-title {
 
 @media (max-width: 959px) {
   .links-wrapper {
-    width: 34%;
+    width: 38%;
   }
 }
 
@@ -397,7 +396,7 @@ a.project-title {
     width: 100%;
   }
   .links-wrapper {
-    width: 36%;
+    width: 39%;
   }
 }
 
@@ -406,7 +405,7 @@ a.project-title {
     font-size: 80px;
   }
   .project-text-wrapper {
-    width: 50%;
+    width: 48%;
     float: right;
     margin-right: 40px;
   }
@@ -419,8 +418,14 @@ a.project-title {
   #jquery p {
     padding-left: 0;
   }
-  .language-icons i {
+  #languages-wrapper i {
     padding: 0 20px;
+  }
+}
+
+@media (max-width: 730px) {
+  .links-wrapper {
+    width: 41%
   }
 }
 
@@ -462,23 +467,23 @@ a.project-title {
   .github-link-icon:hover {
     color: #fff;
   }
-  .language-icons {
-    text-align: left;
+  #languages-wrapper {
+    text-align: unset;
     margin: 0 25%;
-    width: 75%;
+    width: unset;
   }
-  .language-icons i {
+  #languages-wrapper i {
     margin-top: 40px;
   }
-  #html {
-    margin-left: 31px;
-}
-  #css {
-    margin-left: 35px;
+  #CSS-wrapper {
+    margin-left: 25%
+  }
+  #jQuery-wrapper {
+    margin-left: 14%;
   }
 }
 
-/* 
+/*
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
@@ -542,7 +547,7 @@ a.project-title {
   .email a {
     font-size: 20px;
   }
-  .language-icons {
+  #languages-wrapper {
     margin: 0 15%;
     width: 95%;
     padding: 0;
@@ -557,7 +562,7 @@ a.project-title {
     padding: 0 10%;
   }
   .navbar ul {
-    margin: 8px 0 0 10px;
+    margin: 8px 0 0 0;
   }
   li.navbar-text {
     display: none;
@@ -571,7 +576,7 @@ a.project-title {
 }
 
 @media (max-width:350px) {
-.language-icons {
+  #languages-wrapper {
     margin: 0 5%;
   }
     .heading h1 {
