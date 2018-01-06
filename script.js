@@ -156,12 +156,12 @@ projects.addProject('Calculator', //title
            'A simple app featuring a functional calculator. Written with HTML, CSS, JavaScript, and jQuery. Made as a project from The Odin Project\'s curriculum.', //description
            'https://github.com/olivianicholls/calculator', //github link
            'https://olivianicholls.github.io/calculator/', //live link
-           'calculator_thumbnail.png'); //image source
+           'photos/calculator_thumbnail.png'); //image source
 projects.addProject('Etch-A-Sketch', //title
            'A simple app emulating the classic children\'s toy. Written with HTML, CSS, JavaScript, and jQuery. Made as a project from The Odin Project\'s curriculum.', //description
            'https://github.com/olivianicholls/etch-a-sketch', //github link
            'https://olivianicholls.github.io/etch-a-sketch/', //live link
-           'etchasketch_thumbnail.png'); // image source
+           'photos/etchasketch_thumbnail.png'); // image source
 projects.makeProject();
 
 
