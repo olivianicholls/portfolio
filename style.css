@@ -203,18 +203,20 @@ li.navbar-icon {
 #html {
   margin-left: 5px;
 }
-#js {
-  padding-left: 15px;
+#JavaScript-wrapper i {
+  font-size: 100px;
+}
+#jQuery-wrapper {
+  padding-left: 40px;
 }
 #jquery {
 	height: 85px;
   float: left;
-  position: relative;
   left: 40px;
 }
 #jquery-text{
   clear: left;
-  padding: 14px 0 0 40px;
+  padding-top: 14px;
 }
 
 /* Projects Section*/
@@ -360,28 +362,6 @@ a.project-title {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .links-wrapper {
-    width: 32%;
-  } 
-}
-
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
-  
-  
-}
-
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
 @media (max-width: 959px) {
   .links-wrapper {
     width: 38%;
@@ -418,8 +398,11 @@ a.project-title {
   #jquery p {
     padding-left: 0;
   }
-  #languages-wrapper i {
-    padding: 0 20px;
+  .bio p {
+    text-align: center;;
+  }
+  #contact-msg {
+    padding: 40px 0;
   }
 }
 
@@ -458,9 +441,6 @@ a.project-title {
   .github-link-icon {
     display: block;
     color: #09696D;
-    float: none;
-    position: relative;
-    left: 20%;
     font-size: 40px;
     padding-right: 10px;
   }
@@ -474,20 +454,34 @@ a.project-title {
   }
   #languages-wrapper i {
     margin-top: 40px;
+    padding: 0 20px;
+  }
+  #HTML {
+    padding-left: 35px;
   }
   #CSS-wrapper {
-    margin-left: 25%
+    padding: 0 0 0 70px;
+  }
+  #CSS {
+    padding-left: 40px;
   }
   #jQuery-wrapper {
-    margin-left: 14%;
+    margin-left: 8%;
+  }
+  .bio {
+    padding: 0;
   }
 }
 
-/*
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
+@media (max-width: 605px) {
+#languages-wrapper {
+    margin: 0 15% 0 20%;
+}
+   #languages-wrapper i {
+    padding: 0 25px;
+}
+  
+}
 @media (max-width: 560px) {
   .project p {
     width: 86%;
@@ -495,11 +489,21 @@ a.project-title {
   }
 }
 
+@media (max-width: 531px) {
+ 
+}
+
 @media (max-width: 500px) {
   .github-link-icon {
-    left: 10%;
+    padding-left: 30px;
+    display: inline;
+  }
+ #CSS-wrapper {
+    padding-left: 55px;
   }
 }
+
+
 
 @media (max-width: 464px) {
   .navbar {
@@ -517,14 +521,10 @@ a.project-title {
   .projects-wrapper {
     width: 90%;
   }
-  .project {
-    width: 97%;
-  }
   .thumbnail {
     margin: 20px 0;
   }
   .github-link-icon {
-    left: 0;
     display: inline;
     padding-left: 10px;
   }
@@ -548,16 +548,13 @@ a.project-title {
     font-size: 20px;
   }
   #languages-wrapper {
-    margin: 0 15%;
+    margin: 0 12%;
     width: 95%;
     padding: 0;
   }
-  #css-icon {
-    padding-left: 15px;
+  #CSS-wrapper {
+    padding-left: 70px;
   }
-}
-
-@media (max-width: 459px) {
   .navbar li {
     padding: 0 10%;
   }
@@ -575,7 +572,19 @@ a.project-title {
   }
 }
 
+@media (max-width: 390px) {
+#languages-wrapper {
+    margin: 0 9%;
+  }
+  .project {
+    width: 95%;
+  }
+}
+
 @media (max-width:350px) {
+  .github-link-icon {
+    padding: 0;
+  }
   #languages-wrapper {
     margin: 0 5%;
   }
@@ -584,5 +593,16 @@ a.project-title {
   }
   .heading h3 {
     font-size: 30px;
+  }
+  #jQuery-wrapper {
+    margin-left: 4%;
+}
+  #CSS-wrapper {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 328px) {
+  #jQuery-wrapper {
+    margin-left: 0%;
   }
 }
