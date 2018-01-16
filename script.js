@@ -138,8 +138,8 @@ let projects = {
 }
 
 // Projects List
-projects.addProject('Weather App (Currently in Production)', //title
-                    'An app that utilizes openweathermap.org\'s API in order to provide current weather data about the city of your choice', //description
+projects.addProject('Weather App', //title
+                    'An app that utilizes openweathermap.org\'s API in order to provide current weather data about the city of your choice.', //description
                     'https://github.com/olivianicholls/weather_app', //github link
                     'https://olivianicholls.github.io/weather_app/', //live link
                     'photos/weather_app_thumbnail.png'); //image source                  
