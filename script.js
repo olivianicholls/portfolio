@@ -142,7 +142,7 @@ projects.addProject('Weather App', //title
                     'An app that utilizes openweathermap.org\'s API in order to provide current weather data about the city of your choice.', //description
                     'https://github.com/olivianicholls/weather_app', //github link
                     'https://olivianicholls.github.io/weather_app/', //live link
-                    'photos/weather_app_thumbnail.png'); //image source                  
+                    'photos/weatherapp_thumbnail.png'); //image source                  
 projects.addProject('To Do List', //title
                     'A dynamic To Do list that allows users to organize and filter tasks by completion status. Made using HTML, CSS and Vanilla JS', // description
                     'https://github.com/olivianicholls/todolist', //github link
