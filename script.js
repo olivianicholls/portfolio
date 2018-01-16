@@ -144,7 +144,7 @@ projects.addProject('Weather App', //title
                     'https://olivianicholls.github.io/weather_app/', //live link
                     'photos/weather_app_thumbnail.png'); //image source                  
 projects.addProject('To Do List', //title
-                    'A dynamic To Do list made partly while following Watch and Code\'s Practical Javascript course, then making my own modifications once finished the course. Made using HTML, CSS and Vanilla JS', // description
+                    'A dynamic To Do list that allows users to organize and filter tasks by completion status. Made using HTML, CSS and Vanilla JS', // description
                     'https://github.com/olivianicholls/todolist', //github link
                     'https://olivianicholls.github.io/todolist/', // live link
                     'photos/todolist_thumbnail.png'); // image source
