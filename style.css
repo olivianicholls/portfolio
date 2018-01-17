@@ -252,14 +252,22 @@ li.navbar-icon {
   margin-top: 34px;
   width: 90%;
 }
-.project p {
-	font-size: 20px;
+.project-title-wrapper {
+  font-size: 50px;
+}
+.project-description {
+	font-size: 26px;
   margin: 20px auto;
 	color: #09696D;
 }
 .project a{
 	font-weight: 600;
 	color: #09696D;
+}
+.project-languages {
+  float: right;
+  margin: 20px auto;
+  color: #fff;
 }
 a.project-title {
   color: #fff;
@@ -420,7 +428,7 @@ a.project-title {
     margin: 0 auto;
     width: 95%;
   }
-  .project p {
+  .project-description, .project-languages {
     width: 80%;
     margin: 5% 10%;
   }
