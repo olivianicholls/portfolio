@@ -58,15 +58,16 @@ $(document).ready(function() {
 let projects = {
   projectsList: [],
   
-  project: function(title, description, githubLink, liveLink, imageSource) {
+  project: function(title, description, githubLink, liveLink, imageSource, languages) {
     this.title = title;
     this.description = description;
     this.githubLink = githubLink;
     this.liveLink = liveLink;
     this.imageSource = imageSource;
+    this.languages = languages;
   },
-  addProject: function(title, description, githubLink, liveLink, imageSource) {
-    var newProject = new this.project(title, description, githubLink, liveLink, imageSource);
+  addProject: function(title, description, githubLink, liveLink, imageSource, languages) {
+    var newProject = new this.project(title, description, githubLink, liveLink, imageSource, languages);
     this.projectsList.push(newProject);
   },
   makeProject: function() {
@@ -132,37 +133,48 @@ let projects = {
    
       let projectDescription = document.createElement('p');
       projectTextWrapper.appendChild(projectDescription);
+      projectDescription.className = 'project-description';
       projectDescription.textContent = this.projectsList[i].description;
+      
+      let projectLanguages = document.createElement('p');
+      projectTextWrapper.appendChild(projectLanguages);
+      projectLanguages.className = 'project-languages';
+      projectLanguages.textContent = this.projectsList[i].languages;
     }
   }
 }
 
 // Projects List
 projects.addProject('Weather App', //title
-                    'An app that utilizes openweathermap.org\'s API in order to provide current weather data about the city of your choice.', //description
+                    'An app that utilizes openweathermap.org\'s API in order to provide current weather data about the city of your choice', //description
                     'https://github.com/olivianicholls/weather_app', //github link
                     'https://olivianicholls.github.io/weather_app/', //live link
-                    'photos/weatherapp_thumbnail.png'); //image source                  
+                    'photos/weather_app_thumbnail.png', //image source
+                   'JavaScript, HTML5, CSS3 (Responsive)'); // Languages
 projects.addProject('To Do List', //title
-                    'A dynamic To Do list that allows users to organize and filter tasks by completion status. Made using HTML, CSS and Vanilla JS', // description
+                    'A dynamic To Do list that allows users to organize and filter tasks by completion status.', // description
                     'https://github.com/olivianicholls/todolist', //github link
                     'https://olivianicholls.github.io/todolist/', // live link
-                    'photos/todolist_thumbnail.png'); // image source
+                    'photos/todolist_thumbnail.png', //image source
+                   'JavaScript, HTML5, CSS3 (Responsive)'); // Languages);
 projects.addProject('Portfolio Page', //title
-                    'This website you see here! Made using HTML, CSS, and jQuery.', //description
+                    'This website you see here!', //description
                     'https://github.com/olivianicholls/portfolio', //github link
                     'https://olivianicholls.github.io/portfolio/', // live link
-                    'photos/portfolio_thumbnail.png'); // image source
+                    'photos/portfolio_thumbnail.png', // image source
+                   'JavaScript, jQuery, HTML5, CSS3 (Responsive)'); // Languages
 projects.addProject('Calculator', //title
-                    'A simple app featuring a functional calculator. Written with HTML, CSS, JavaScript, and jQuery. Made as a project from The Odin Project\'s curriculum.', //description
+                    'A functional calculator app.', //description
                     'https://github.com/olivianicholls/calculator', //github link
                     'https://olivianicholls.github.io/calculator/', //live link
-                    'photos/calculator_thumbnail.png'); //image source
+                    'calculator_thumbnail.png', // image source
+                   'JavaScript, jQuery, HTML5, CSS3 (Responsive)'); // Languages
 projects.addProject('Etch-A-Sketch', //title
-                    'A simple app emulating the classic children\'s toy. Written with HTML, CSS, JavaScript, and jQuery. Made as a project from The Odin Project\'s curriculum.', //description
+                    'A simple app emulating the classic children\'s toy. Resize the grid to your liking, and draw away!', //description
                     'https://github.com/olivianicholls/etch-a-sketch', //github link
                     'https://olivianicholls.github.io/etch-a-sketch/', //live link
-                    'photos/etchasketch_thumbnail.png'); // image source
+                    'etchasketch_thumbnail.png', // image source
+                   'JavaScript, jQuery, HTML5, CSS3 (Responsive)'); // Languages 
 
 projects.makeProject();
 
@@ -207,7 +219,7 @@ let languages = {
     if (this.languagesList[i].name === 'jQuery') {
       let jqueryImage = document.createElement('img');
       jqueryImage.id = 'jquery';
-      jqueryImage.src = 'http://flaticons.net/gd/makefg.php?i=icons/Brand%20Identity/Logo-JQuery.png&r=255&g=255&b=255';
+      jqueryImage.src = 'https://flaticons.net/gd/makefg.php?i=icons/Brand%20Identity/Logo-JQuery.png&r=255&g=255&b=255';
       name.id = "jquery-text";
       iconWrapper.removeChild(icon);
       iconWrapper.insertBefore(jqueryImage, languageNames);
