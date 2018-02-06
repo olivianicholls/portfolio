@@ -145,6 +145,12 @@ let projects = {
 }
 
 // Projects List
+projects.addProject('Battleship (Currently in Production)', //title
+                    'Play against the computer to try and sink their battleships before your missiles run out.', //description
+                    'https://github.com/olivianicholls/battleship', //github link
+                    'https://olivianicholls.github.io/battleship/', //live link
+                    'photos/battleship_thumbnail.png', // image source
+                   'JavaScript, HTML5, CSS3'); // Languages 
 projects.addProject('Weather App', //title
                     'An app that utilizes openweathermap.org\'s API in order to provide current weather data about the city of your choice', //description
                     'https://github.com/olivianicholls/weather_app', //github link
@@ -181,51 +187,50 @@ projects.makeProject();
 
 // Create languages section
 let languages = {
- languagesList: [],
+  languagesList: [],
   
   language: function(name, iconClass) {
-  this.name = name;
-  this.iconClass = iconClass;
+    this.name = name;
+    this.iconClass = iconClass;
   },
   addLanguage: function(name, iconClass){
-  let newLanguage = new this.language(name, iconClass);
-  this.languagesList.push(newLanguage);
+    let newLanguage = new this.language(name, iconClass);
+    this.languagesList.push(newLanguage);
   },
-  makeLanguage: function() {
-  let languagesWrapper = document.getElementById('languages-wrapper');
-  
-  for(let i = 0; i < this.languagesList.length; i++) {
+  makeLanguageList: function() {
+    let languagesWrapper = document.getElementById('languages-wrapper');
     
-    let iconWrapper = document.createElement('div');
-    languagesWrapper.appendChild(iconWrapper);
-    iconWrapper.className = 'icon-wrapper';
-    iconWrapper.id = this.languagesList[i].name + '-wrapper';
- 
-    let icon = document.createElement('i');
-    iconWrapper.appendChild(icon);
-    icon.className = 'language-icons ion ' + this.languagesList[i].iconClass;
-
-    
-    let languageNames = document.createElement('div');
-    iconWrapper.appendChild(languageNames);
-    languageNames.className = 'language-names';
-    
-    let name = document.createElement('p');
-    languageNames.appendChild(name);
-    name.id = this.languagesList[i].name;
-    name.textContent = this.languagesList[i].name;
-    
-    
-    if (this.languagesList[i].name === 'jQuery') {
-      let jqueryImage = document.createElement('img');
-      jqueryImage.id = 'jquery';
-      jqueryImage.src = 'https://flaticons.net/gd/makefg.php?i=icons/Brand%20Identity/Logo-JQuery.png&r=255&g=255&b=255';
-      name.id = "jquery-text";
-      iconWrapper.removeChild(icon);
-      iconWrapper.insertBefore(jqueryImage, languageNames);
+    for(let i = 0; i < this.languagesList.length; i++) {
+      
+      let iconWrapper = document.createElement('div');
+      languagesWrapper.appendChild(iconWrapper);
+      iconWrapper.className = 'icon-wrapper';
+      iconWrapper.id = this.languagesList[i].name + '-wrapper';
+      
+      let icon = document.createElement('i');
+      iconWrapper.appendChild(icon);
+      icon.className = 'language-icons ion ' + this.languagesList[i].iconClass;
+      
+      
+      let languageNames = document.createElement('div');
+      iconWrapper.appendChild(languageNames);
+      languageNames.className = 'language-names';
+      
+      let name = document.createElement('p');
+      languageNames.appendChild(name);
+      name.id = this.languagesList[i].name;
+      name.textContent = this.languagesList[i].name;
+      
+      
+      if (this.languagesList[i].name === 'jQuery') {
+        let jqueryImage = document.createElement('img');
+        jqueryImage.id = 'jquery';
+        jqueryImage.src = 'https://flaticons.net/gd/makefg.php?i=icons/Brand%20Identity/Logo-JQuery.png&r=255&g=255&b=255';
+        name.id = "jquery-text";
+        iconWrapper.removeChild(icon);
+        iconWrapper.insertBefore(jqueryImage, languageNames);
+      }
     }
-  
-  }
   }
 }
 
@@ -235,4 +240,4 @@ languages.addLanguage('HTML','ion-social-html5-outline');
 languages.addLanguage('CSS','ion-social-css3-outline');
 languages.addLanguage('JavaScript','ion-social-javascript-outline');
 languages.addLanguage('jQuery');
-languages.makeLanguage();
+languages.makeLanguageList();
