@@ -1,10 +1,10 @@
 $(document).ready(function() {
   
   //Scroll function
-  $(".scroll").click(function(event){		
-		event.preventDefault();
+  $(".scroll").click(function(event){
+    event.preventDefault();
     $('html,body').animate({scrollTop:$(this.hash).offset().top - 90}, 800);
-	});
+  });
   
   //Header fade in
   $("h1").fadeIn(2500);
@@ -146,7 +146,7 @@ projects.addProject('Weather App', //title
                     'An app that utilizes openweathermap.org\'s API in order to provide current weather data about the city of your choice', //description
                     'https://github.com/olivianicholls/weather_app', //github link
                     'https://olivianicholls.github.io/weather_app/', //live link
-                    'photos/weather_app_thumbnail.png', //image source
+                    'photos/weatherapp_thumbnail.png', //image source
                     'JavaScript, HTML5, CSS3 (Responsive)'); // Languages
 projects.addProject('To Do List', //title
                     'A dynamic To Do list that allows users to organize and filter tasks by completion status.', // description
@@ -177,7 +177,6 @@ projects.makeProject();
 // Create languages section
 let languages = {
   languagesList: [],
-  
   language: function(name, iconClass) {
     this.name = name;
     this.iconClass = iconClass;
@@ -200,7 +199,6 @@ let languages = {
       iconWrapper.appendChild(icon);
       icon.className = 'language-icons ion ' + this.languagesList[i].iconClass;
       
-      
       let languageNames = document.createElement('div');
       iconWrapper.appendChild(languageNames);
       languageNames.className = 'language-names';
@@ -210,11 +208,10 @@ let languages = {
       name.id = this.languagesList[i].name;
       name.textContent = this.languagesList[i].name;
       
-      
       if (this.languagesList[i].name === 'jQuery') {
         let jqueryImage = document.createElement('img');
         jqueryImage.id = 'jquery';
-        jqueryImage.src = 'https://flaticons.net/gd/makefg.php?i=icons/Brand%20Identity/Logo-JQuery.png&r=255&g=255&b=255';
+        jqueryImage.src = 'http://flaticons.net/gd/makefg.php?i=icons/Brand%20Identity/Logo-JQuery.png&r=255&g=255&b=255';
         name.id = "jquery-text";
         iconWrapper.removeChild(icon);
         iconWrapper.insertBefore(jqueryImage, languageNames);
