@@ -6,7 +6,6 @@ $(document).ready(function() {
     $('html,body').animate({scrollTop:$(this.hash).offset().top - 90}, 800);
 	});
   
-  
   //Header fade in
   $("h1").fadeIn(2500);
   $("h3").fadeIn(2800);
@@ -18,9 +17,7 @@ $(document).ready(function() {
     //Menu button slide down
     if ($('.navbar').css('display') === 'block') {
       $(this).animate(
-        {
-          top: "50px"
-        },
+        {top: "50px"},
         {queue: false, duration: 400}
       );
     } 
@@ -30,9 +27,7 @@ $(document).ready(function() {
     $(".menu-btn").click(function(event) {
     if ($(this).css('top') === '50px') {
       $('.menu-btn').animate(
-        {
-          top: "0"
-        },
+        {top: "0"},
       );
     }
   });
@@ -40,16 +35,12 @@ $(document).ready(function() {
   //Fade in language text
   $(".icon-wrapper").mouseover(function() {
     $(this).find('.language-names').animate(
-      {
-        opacity: 1
-      }, 600)
+      {opacity: 1}, 600)
   });
   //Fade out language text
   $(".icon-wrapper").mouseout(function() {
      $(this).find('.language-names').animate(
-      {
-        opacity: 0
-      }, 500);
+      {opacity: 0}, 500);
   });
 });
 
@@ -150,40 +141,38 @@ projects.addProject('Battleship (Currently in Production)', //title
                     'https://github.com/olivianicholls/battleship', //github link
                     'https://olivianicholls.github.io/battleship/', //live link
                     'photos/battleship_thumbnail.png', // image source
-                   'JavaScript, HTML5, CSS3'); // Languages 
+                    'JavaScript, HTML5, CSS3'); // Languages 
 projects.addProject('Weather App', //title
                     'An app that utilizes openweathermap.org\'s API in order to provide current weather data about the city of your choice', //description
                     'https://github.com/olivianicholls/weather_app', //github link
                     'https://olivianicholls.github.io/weather_app/', //live link
                     'photos/weather_app_thumbnail.png', //image source
-                   'JavaScript, HTML5, CSS3 (Responsive)'); // Languages
+                    'JavaScript, HTML5, CSS3 (Responsive)'); // Languages
 projects.addProject('To Do List', //title
                     'A dynamic To Do list that allows users to organize and filter tasks by completion status.', // description
                     'https://github.com/olivianicholls/todolist', //github link
                     'https://olivianicholls.github.io/todolist/', // live link
                     'photos/todolist_thumbnail.png', //image source
-                   'JavaScript, HTML5, CSS3 (Responsive)'); // Languages);
+                    'JavaScript, HTML5, CSS3 (Responsive)'); // Languages);
 projects.addProject('Portfolio Page', //title
                     'This website you see here!', //description
                     'https://github.com/olivianicholls/portfolio', //github link
                     'https://olivianicholls.github.io/portfolio/', // live link
                     'photos/portfolio_thumbnail.png', // image source
-                   'JavaScript, jQuery, HTML5, CSS3 (Responsive)'); // Languages
+                    'JavaScript, jQuery, HTML5, CSS3 (Responsive)'); // Languages
 projects.addProject('Calculator', //title
                     'A functional calculator app.', //description
                     'https://github.com/olivianicholls/calculator', //github link
                     'https://olivianicholls.github.io/calculator/', //live link
-                    'calculator_thumbnail.png', // image source
-                   'JavaScript, jQuery, HTML5, CSS3 (Responsive)'); // Languages
+                    'photos/calculator_thumbnail.png', // image source
+                    'JavaScript, jQuery, HTML5, CSS3 (Responsive)'); // Languages
 projects.addProject('Etch-A-Sketch', //title
                     'A simple app emulating the classic children\'s toy. Resize the grid to your liking, and draw away!', //description
                     'https://github.com/olivianicholls/etch-a-sketch', //github link
                     'https://olivianicholls.github.io/etch-a-sketch/', //live link
-                    'etchasketch_thumbnail.png', // image source
-                   'JavaScript, jQuery, HTML5, CSS3 (Responsive)'); // Languages 
-
+                    'photos/etchasketch_thumbnail.png', // image source
+                    'JavaScript, jQuery, HTML5, CSS3 (Responsive)'); // Languages 
 projects.makeProject();
-
 
 // Create languages section
 let languages = {
