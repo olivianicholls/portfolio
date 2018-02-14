@@ -141,37 +141,37 @@ projects.addProject('Battleship (Currently in Production)', //title
                     'https://github.com/olivianicholls/battleship', //github link
                     'https://olivianicholls.github.io/battleship/', //live link
                     'photos/battleship_thumbnail.png', // image source
-                    'JavaScript, HTML5, CSS3'); // Languages 
+                    'Vanilla JS, HTML5, CSS'); // Languages 
 projects.addProject('Weather App', //title
                     'An app that utilizes openweathermap.org\'s API in order to provide current weather data about the city of your choice', //description
                     'https://github.com/olivianicholls/weather_app', //github link
                     'https://olivianicholls.github.io/weather_app/', //live link
                     'photos/weatherapp_thumbnail.png', //image source
-                    'JavaScript, HTML5, CSS3 (Responsive)'); // Languages
+                    'Vanilla JS, HTML5, CSS3 (Responsive)'); // Languages
 projects.addProject('To Do List', //title
                     'A dynamic To Do list that allows users to organize and filter tasks by completion status.', // description
                     'https://github.com/olivianicholls/todolist', //github link
                     'https://olivianicholls.github.io/todolist/', // live link
                     'photos/todolist_thumbnail.png', //image source
-                    'JavaScript, HTML5, CSS3 (Responsive)'); // Languages);
+                    'Vanilla JS, HTML5, CSS'); // Languages);
 projects.addProject('Portfolio Page', //title
                     'This website you see here!', //description
                     'https://github.com/olivianicholls/portfolio', //github link
                     'https://olivianicholls.github.io/portfolio/', // live link
                     'photos/portfolio_thumbnail.png', // image source
-                    'JavaScript, jQuery, HTML5, CSS3 (Responsive)'); // Languages
+                    'JavaScript, jQuery, HTML5, CSS (Responsive)'); // Languages
 projects.addProject('Calculator', //title
                     'A functional calculator app.', //description
                     'https://github.com/olivianicholls/calculator', //github link
                     'https://olivianicholls.github.io/calculator/', //live link
                     'photos/calculator_thumbnail.png', // image source
-                    'JavaScript, jQuery, HTML5, CSS3 (Responsive)'); // Languages
+                    'JavaScript, jQuery, HTML5, CSS (Responsive)'); // Languages
 projects.addProject('Etch-A-Sketch', //title
                     'A simple app emulating the classic children\'s toy. Resize the grid to your liking, and draw away!', //description
                     'https://github.com/olivianicholls/etch-a-sketch', //github link
                     'https://olivianicholls.github.io/etch-a-sketch/', //live link
                     'photos/etchasketch_thumbnail.png', // image source
-                    'JavaScript, jQuery, HTML5, CSS3 (Responsive)'); // Languages 
+                    'JavaScript, jQuery, HTML5, CSS (Responsive)'); // Languages 
 projects.makeProject();
 
 // Create languages section
