@@ -138,6 +138,7 @@ li.navbar-icon {
 }
 .heading h1 {
 	font-size: 140px;
+  text-shadow: 10px 0px 30px rgba(0, 0, 0, 0.2);
 	display: none;
 }
 .heading h3 {
@@ -154,42 +155,93 @@ li.navbar-icon {
 	text-align: center;
 }
 
-/* h2 {
-  animation-duration: 3s;
-  animation-name: underline;
+/* Projects Section*/
+.projects {
+	font-size: 20px;
+  line-height: 1.5;
 }
-
-@keyframes underline {
-  from {
-    text-decoration: none; 
-  }
-
-  to {
-    text-decoration: underline;
-  }
-} */
-/* Bio Section */
-.bio {
-	text-align: justify;
-	font-size: 23px;
-	line-height: 2;
-	margin: 0 auto;
-	padding: 40px 120px;
-	width: 70%;
+#projects-wrapper {
+    margin: 0 auto;
+    width: 85%;
+    display: grid;
+    grid-template: repeat(3, 33%) / repeat(2, 50%);
 }
-.bio p {
+.project {
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 3px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+	width: 90%;
+	margin: 20px auto;
+  overflow: -webkit-paged-y;
+  padding: 10px;
+}
+.image-wrapper {
+  margin: 10px auto;
+  width: 200px;
+}
+.thumbnail {
+	height: 150px;
+	width: 150px;
+	background-color: #ddd;
+	float: left;
+  margin-left: 20px;
+	border-radius: 3px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+.links-wrapper {
+  float: left;
+  width: 100%
+}
+.project-text-wrapper {
+  margin: 200px auto;
+  width: 95%;
+}
+.project-title-wrapper {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 30px;
+}
+.project-description {
+	font-size: 22px;
+	color: #09696D;
+}
+.project-description, .project-languages {
+  width: 80%;
+  margin: 5% 10%;
+}
+.project a{
+	font-weight: 600;
+	color: #09696D;
+}
+.project-languages {
+  float: right;
   color: #fff;
-	margin: 0 20px;
+}
+a.project-title {
+  color: #fff;
+}
+.github-link-icon {
+  display: block;
+  color: #09696D;
+  font-size: 40px;
+  padding-right: 10px;
+  float: right;
+}
+.github-link-icon:hover {
+  color: #fff;
 }
 /* Languages Section */
+.languages {
+  clear: left;
+}
 #languages-wrapper {
   padding: 60px 0;
 	font-size: 90px;
 	color: #fff;
 	text-align: center;
-}
-#languages-wrapper i {
-	padding: 0 40px;
+  display: grid;
+  grid-template: 100% / repeat(4, 200px);
+  justify-content: center;
 }
 .icon-wrapper {
   display: inline-block
@@ -213,75 +265,27 @@ li.navbar-icon {
 #jquery {
 	height: 85px;
   float: left;
-  left: 40px;
 }
 #jquery-text{
   clear: left;
   padding-top: 14px;
+  margin-right: 70px;
 }
 
-/* Projects Section*/
-.projects {
-	font-size: 20px;
-  line-height: 1.5;
-	margin-top: 200px;
-  border-radius: 3px;
+/* Bio Section */
+.bio {
+	text-align: justify;
+	font-size: 23px;
+	line-height: 2;
+	margin: 0 auto;
+	padding: 40px 120px;
+	width: 70%;
 }
-.project {
-	background-color: rgba(255, 255, 255, 0.2);
-	border-radius: 3px;
-	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-	width: 85%;
-	margin: 20px auto;
-  overflow: -webkit-paged-y;
-  padding-right: 10px;
-}
-.thumbnail {
-	height: 200px;
-	width: 200px;
-	background-color: #ddd;
-	float: left;
-	margin: 40px 0 20px 40px;
-	border-radius: 3px;
-	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-}
-.links-wrapper {
-  float: left;
-  width: 25%
-}
-.project-text-wrapper {
-  margin-top: 34px;
-  width: 90%;
-}
-.project-title-wrapper {
-  font-size: 40px;
-}
-.project-description {
-	font-size: 26px;
-  margin: 20px auto;
-	color: #09696D;
-}
-.project a{
-	font-weight: 600;
-	color: #09696D;
-}
-.project-languages {
-  float: right;
-  margin: 20px auto;
+.bio p {
   color: #fff;
+	margin: 0 20px;
 }
-a.project-title {
-  color: #fff;
-}
-.github-link {
-  clear: left;
-  font-size: 20px;
-  padding: 0 0 40px 40px;
-}
-.github-link-icon {
-  display: none;
-  float: right;
-}
+
 /* Contact Section */
 .contact {
 	color: #112d59;
@@ -335,31 +339,21 @@ a.project-title {
 	margin-bottom: 100px;
 	display: inline-block;
 }
+.disclaimer {
+  background-color: #112d59;
+  height: 100%;
+}
 .disclaimer p {
 	font-size: 15px;
-	color: #112d59;
+	color: #fff;
 	text-align: center;
-	margin: 20px;
+	padding: 20px;
 }
 
 
-
-
-@media (max-width: 1554px) {
-.links-wrapper {
-    width: 26%;
-  }
-}
-
-@media (max-width: 1364px) {
-.links-wrapper {
-    width: 28%;
-  }
-}
 @media (max-width: 1280px) {
-  .projects-wrapper {
+  #projects-wrapper {
     width: 90%;
-    margin: 0 auto;
   }
 }
 
@@ -368,44 +362,32 @@ a.project-title {
   ##Screen = B/w 768px to 1024px
 */
 
-@media (max-width: 1150px) {
-  .links-wrapper {
-    width: 30%;
-  }
-}
-
 @media (max-width: 959px) {
-  .links-wrapper {
-    width: 38%;
+  #projects-wrapper {
+    width: 95%;
+  }
+}
+@media (max-width: 901px) {
+  #projects-wrapper {
+    width: 98%;
   }
 }
 
-
-@media (max-width: 834px) {
-  .project-text-wrapper {
-    clear: none;
-    margin-top: 34px;
-    width: 100%;
-  }
-  .links-wrapper {
-    width: 39%;
-  }
-}
 
 @media (max-width: 768px) {
+  #languages-wrapper {
+    grid-template: repeat(2, 50%) / repeat(2, 50%);
+    width: 75%;
+    margin: 0 auto;
+  }
+  .icon-wrapper {
+    padding: 20px;
+  }
   .heading h1{
     font-size: 80px;
   }
-  .project-text-wrapper {
-    width: 48%;
-    float: right;
-    margin-right: 40px;
-  }
-  .link-wrapper {
-    width: 36%;
-  }
-  #jquery img {
-    margin: 0;
+  #jquery {
+    float: none;
   }
   #jquery p {
     padding-left: 0;
@@ -418,100 +400,32 @@ a.project-title {
   }
 }
 
-@media (max-width: 730px) {
-  .links-wrapper {
-    width: 41%
+@media (max-width: 714px) {
+  #projects-wrapper {
+    grid-template: repeat(6, 100%)/ 100%;
   }
 }
 
 @media (max-width: 648px) {
-  .links-wrapper {
-    width: 100%;
-  }
-  .project-text-wrapper {
-    margin: 0 auto;
-    width: 95%;
-  }
-  .project-description, .project-languages {
-    width: 80%;
-    margin: 5% 10%;
-  }
-  .project-title-wrapper {
-    text-align: center;
-    padding-top: 30px;
-  }
-  .image-wrapper {
-    margin: 10px auto;
-    width: 200px;
-  }
-  .thumbnail {
-    margin: 20px 0 0 0;
-  }
-  .github-link {
-    display: none;
-  }
-  .github-link-icon {
-    display: block;
-    color: #09696D;
-    font-size: 40px;
-    padding-right: 10px;
-  }
-  .github-link-icon:hover {
-    color: #fff;
-  }
-  #languages-wrapper {
-    text-align: unset;
-    margin: 0 25%;
-    width: unset;
-  }
-  #languages-wrapper i {
-    margin-top: 40px;
-    padding: 0 20px;
-  }
-  #HTML {
-    padding-left: 35px;
-  }
-  #CSS-wrapper {
-    padding: 0 0 0 70px;
-  }
-  #CSS {
-    padding-left: 40px;
-  }
-  #jQuery-wrapper {
-    margin-left: 8%;
+ #jquery-text {
+   margin-right: 0;
+   padding-top: 0;
   }
   .bio {
     padding: 0;
   }
 }
 
-@media (max-width: 605px) {
-#languages-wrapper {
-    margin: 0 15% 0 20%;
-}
-   #languages-wrapper i {
-    padding: 0 25px;
-}
-  
-}
 @media (max-width: 560px) {
   .project p {
     width: 86%;
-    margin: 20px auto;
   }
-}
-
-@media (max-width: 531px) {
- 
 }
 
 @media (max-width: 500px) {
   .github-link-icon {
     padding-left: 30px;
     display: inline;
-  }
- #CSS-wrapper {
-    padding-left: 55px;
   }
 }
 
@@ -543,9 +457,6 @@ a.project-title {
     display: inline;
     padding-left: 10px;
   }
-  #jquery {
-    margin-right: 21px;
-  }
   .bio, #contact-msg {
     padding: 0;
     width: 85%;
@@ -563,12 +474,7 @@ a.project-title {
     font-size: 20px;
   }
   #languages-wrapper {
-    margin: 0 12%;
     width: 95%;
-    padding: 0;
-  }
-  #CSS-wrapper {
-    padding-left: 70px;
   }
   .navbar li {
     padding: 0 10%;
@@ -600,9 +506,6 @@ a.project-title {
 }
 
 @media (max-width: 390px) {
-#languages-wrapper {
-    margin: 0 9%;
-  }
   .project {
     width: 95%;
   }
@@ -612,24 +515,10 @@ a.project-title {
   .github-link-icon {
     padding: 0;
   }
-  #languages-wrapper {
-    margin: 0 5%;
-  }
     .heading h1 {
     font-size: 60px;
   }
   .heading h3 {
     font-size: 30px;
-  }
-  #jQuery-wrapper {
-    margin-left: 4%;
-}
-  #CSS-wrapper {
-    padding-left: 50px;
-  }
-}
-@media (max-width: 328px) {
-  #jQuery-wrapper {
-    margin-left: 0%;
   }
 }
