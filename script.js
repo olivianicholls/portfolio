@@ -44,6 +44,10 @@ $(document).ready(function() {
   });
 });
 
+// Contact info animations
+//$(".
+
+
 // Create projects section
 
 let projects = {
@@ -82,10 +86,9 @@ let projects = {
       liveLink.appendChild(imageWrapper);
       imageWrapper.className ='image-wrapper';
     
-      let thumbnail = document.createElement('img');
+      let thumbnail = document.createElement('i');
       imageWrapper.appendChild(thumbnail);
-      thumbnail.className = 'thumbnail';
-      thumbnail.src = this.projectsList[i].imageSource;
+      thumbnail.className = this.projectsList[i].imageSource;
     
       let githubIconDiv = document.createElement('div');
       linksWrapper.appendChild(githubIconDiv);
@@ -131,37 +134,37 @@ projects.addProject('Battleship (Currently in Production)', //title
                     'Play against the computer to try and sink their battleships before your missiles run out.', //description
                     'https://github.com/olivianicholls/battleship', //github link
                     'https://olivianicholls.github.io/battleship/', //live link
-                    'photos/battleship_thumbnail.png', // image source
+                    'fas fa-crosshairs', // image source
                     'JavaScript, HTML5, CSS3'); // Languages 
 projects.addProject('Weather App', //title
                     'An app that utilizes openweathermap.org\'s API in order to provide current weather data about the city of your choice', //description
                     'https://github.com/olivianicholls/weather_app', //github link
                     'https://olivianicholls.github.io/weather_app/', //live link
-                    'photos/weatherapp_thumbnail.png', //image source
+                    'fas fa-sun', //image source
                     'JavaScript, HTML5, CSS3 (Responsive)'); // Languages
 projects.addProject('To Do List', //title
                     'A dynamic To Do list that allows users to organize and filter tasks by completion status.', // description
                     'https://github.com/olivianicholls/todolist', //github link
                     'https://olivianicholls.github.io/todolist/', // live link
-                    'photos/todolist_thumbnail.png', //image source
+                    'far fa-list-alt', //image source
                     'JavaScript, HTML5, CSS3 (Responsive)'); // Languages);
 projects.addProject('Portfolio Page', //title
                     'This website you see here!', //description
                     'https://github.com/olivianicholls/portfolio', //github link
                     'https://olivianicholls.github.io/portfolio/', // live link
-                    'photos/portfolio_thumbnail.png', // image source
+                    'fas fa-desktop', // image source
                     'JavaScript, jQuery, HTML5, CSS3 (Responsive)'); // Languages
 projects.addProject('Calculator', //title
                     'A functional calculator app.', //description
                     'https://github.com/olivianicholls/calculator', //github link
                     'https://olivianicholls.github.io/calculator/', //live link
-                    'photos/calculator_thumbnail.png', // image source
+                    'fas fa-calculator', // image source
                     'JavaScript, jQuery, HTML5, CSS3 (Responsive)'); // Languages
 projects.addProject('Etch-A-Sketch', //title
                     'A simple app emulating the classic children\'s toy. Resize the grid to your liking, and draw away!', //description
                     'https://github.com/olivianicholls/etch-a-sketch', //github link
                     'https://olivianicholls.github.io/etch-a-sketch/', //live link
-                    'photos/etchasketch_thumbnail.png', // image source
+                    'far fa-edit', // image source
                     'JavaScript, jQuery, HTML5, CSS3 (Responsive)'); // Languages 
 projects.makeProject();
 
