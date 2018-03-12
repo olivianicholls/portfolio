@@ -44,10 +44,6 @@ $(document).ready(function() {
   });
 });
 
-// Contact info animations
-//$(".
-
-
 // Create projects section
 
 let projects = {
