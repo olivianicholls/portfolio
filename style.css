@@ -69,7 +69,7 @@ a{
  text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
+/*   text-decoration: underline; */
 }
 /* Navigation */
 .menu-btn {
@@ -196,7 +196,8 @@ svg {
 }
 .project-text-wrapper {
   width: 95%;
-  text-align: center
+  text-align: center;
+  padding-left: 3%;
 }
 .project-title-wrapper {
   padding-top: 30px;
@@ -307,28 +308,30 @@ a.project-title {
 #email-icon {
   display: none
 }
-#social-github a:hover, #social-linkedin a:hover {
-  color: #fff;
-}
 #social-links {    
   display: grid;
   grid-template: 1fr/ 1fr 1fr;
   width: 300px;
+  height: 200px;
   margin: 50px auto;
 }
-#social-github, #social-linkedin {
+.social {
 	text-align: center;
 	font-size: 20px;
 	margin: 20px 0;
-  padding-left: 6px;
+  padding: 20px 0 0 6px;
 }
-#social-github a, #social-linkedin a {
+.social a {
 	color: #112d59;
   margin: 15px 0;
 	display: grid;
 }
-#social-github i, #social-linkedin i{
+.social i {
 	font-size: 44px;
+  color: #112d59;
+}
+.social-hover i, .social-hover a{
+  color: #fff;
 }
 .disclaimer {
   background-color: #112d59;
