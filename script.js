@@ -31,7 +31,21 @@ $(document).ready(function() {
       );
     }
   });
-
+  $(".navbar a").mouseover(function() {
+    $(this).animate({
+      "font-weight" : 600,
+    }, 60);
+    $(this).animate({
+      "font-size":"24px"
+    }, 600);
+  });
+  $(".navbar a").mouseout(function() {
+    $(this).animate({
+      "font-weight" : 500,
+      "font-size":"19px"
+    }, 600);
+  });
+  
   //Fade in language text
   $(".icon-wrapper").mouseover(function() {
     $(this).find('.language-names').animate(
@@ -41,6 +55,18 @@ $(document).ready(function() {
   $(".icon-wrapper").mouseout(function() {
      $(this).find('.language-names').animate(
       {opacity: 0}, 500);
+  });
+  
+  // Contact info move up animations
+  $(".social").mouseenter(function() {
+     $(this).animate({"padding-top": 0}, 300); 
+      $(this).addClass("social-hover");
+  });
+  // Contact info move down animations
+  $(".social").mouseleave(function() {
+     $(this).animate(
+      {"padding-top": "20px"}, 300); 
+      $(this).removeClass("social-hover");
   });
 });
 
