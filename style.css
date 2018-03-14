@@ -56,7 +56,7 @@ table {
     background: -webkit-linear-gradient(45deg, rgba(137,194,84,1) 0%, rgba(0,175,214,1) 100%);
     background: -o-linear-gradient(45deg, rgba(137,194,84,1) 0%, rgba(0,175,214,1) 100%);
     background: -ms-linear-gradient(45deg, rgba(137,194,84,1) 0%, rgba(0,175,214,1) 100%);
-    background: linear-gradient(45deg, rgba(137,194,84,1) 0%, rgba(0,175,214,1) 100%);
+    background: linear-gradient(to right top, rgba(137,194,84,1) 0%, rgba(91, 201, 168,1) 45%, rgba(0,175,214,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#89c254', endColorstr='#00afd6', GradientType=1 );
     background-attachment: fixed;
 }
