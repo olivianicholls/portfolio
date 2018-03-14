@@ -47,18 +47,18 @@ table {
 	border-spacing: 0;
 }
 /*Original Code*/
-	body {
-		margin: 0;
-		font-family: 'Cutive Mono', monospace;
-    background: rgba(137,194,84,1);
-    background: -moz-linear-gradient(45deg, rgba(137,194,84,1) 0%, rgba(0,175,214,1) 100%);
-    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(137,194,84,1)), color-stop(100%, rgba(0,175,214,1)));
-    background: -webkit-linear-gradient(45deg, rgba(137,194,84,1) 0%, rgba(0,175,214,1) 100%);
-    background: -o-linear-gradient(45deg, rgba(137,194,84,1) 0%, rgba(0,175,214,1) 100%);
-    background: -ms-linear-gradient(45deg, rgba(137,194,84,1) 0%, rgba(0,175,214,1) 100%);
-    background: linear-gradient(to right top, rgba(137,194,84,1) 0%, rgba(91, 201, 168,1) 45%, rgba(0,175,214,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#89c254', endColorstr='#00afd6', GradientType=1 );
-    background-attachment: fixed;
+body {
+  margin: 0;
+  font-family: 'Cutive Mono', monospace;
+  background: rgba(137,194,84,1);
+  background: -moz-linear-gradient(45deg, rgba(137,194,84,1) 0%, rgba(0,175,214,1) 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(137,194,84,1)), color-stop(100%, rgba(0,175,214,1)));
+  background: -webkit-linear-gradient(45deg, rgba(137,194,84,1) 0%, rgba(0,175,214,1) 100%);
+  background: -o-linear-gradient(45deg, rgba(137,194,84,1) 0%, rgba(0,175,214,1) 100%);
+  background: -ms-linear-gradient(45deg, rgba(137,194,84,1) 0%, rgba(0,175,214,1) 100%);
+  background: linear-gradient(to right top, rgba(137,194,84,1) 0%, rgba(91, 201, 168,1) 45%, rgba(0,175,214,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#89c254', endColorstr='#00afd6', GradientType=1 );
+  background-attachment: fixed;
 }
 .container {
   margin: 0 auto;
@@ -356,11 +356,6 @@ a.project-title {
   }
 }
 
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
 @media (max-width: 959px) {
   #projects-wrapper {
     width: 95%;
@@ -402,6 +397,9 @@ a.project-title {
 @media (max-width: 714px) {
   #projects-wrapper {
     grid-template: repeat(6, 100%)/ 100%;
+  }
+  .navbar li {
+    padding: 0 3%;
   }
 }
 
@@ -446,7 +444,7 @@ a.project-title {
   .projects-wrapper {
     width: 90%;
   }
-.project-description {
+  .project-description {
     font-size: 20px;
   }
   .thumbnail {
@@ -481,20 +479,27 @@ a.project-title {
   .navbar ul {
     margin: 8px 0 0 0;
   }
+  .navbar a {
+    padding: 0;
+  }
+  .navbar a:hover{
+    background: none;
+  }
   li.navbar-text {
     display: none;
   }
   li.navbar-icon {
     display: inline;
   }
+  
   .navbar-icon i {
     font-size: 30px;
   }
-#email-icon {
-  display: block;
-  text-align: center;
-  margin-top: 60px;
-  font-size: 60px;
+  #email-icon {
+    display: block;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 60px;
   }
   #email-icon i:hover {
     color: #fff;
