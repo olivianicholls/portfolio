@@ -139,8 +139,14 @@ let projects = {
 }
 
 // Projects List
-projects.addProject('Battleship (Currently in Production)', //title
-                    'Play against the computer to try and sink their battleships before they sink yours! (Currently working to make site responsive).', //description
+projects.addProject('CMS System (Currently in Production)', //title
+                    'A dynamic CMS system which displays the user\'s data from SQL database in a blog format. Allows users to log in, create, read, update, and delete data from database.', //description
+                    '', //github link
+                    '', //live link
+                    'fas fa-table', // image source
+                    'PHP, Bootstrap'); // Languages 
+projects.addProject('Battleship', //title
+                    'Play against the computer AI to try and sink their battleships before they sink yours!', //description
                     'https://github.com/olivianicholls/battleship', //github link
                     'https://olivianicholls.github.io/battleship/', //live link
                     'fas fa-crosshairs', // image source
@@ -155,10 +161,10 @@ projects.addProject('To Do List', //title
                     'A dynamic To Do list that allows users to organize and filter tasks by completion status.', // description
                     'https://github.com/olivianicholls/todolist', //github link
                     'https://olivianicholls.github.io/todolist/', // live link
-                    'far fa-list-alt', //image source
+                    'fas fa-tasks', //image source
                     'Vanilla JS, HTML5, CSS'); // Languages);
 projects.addProject('Portfolio Page', //title
-                    'This website you see here!', //description
+                    'This website you see here! Designed and coded by yours truly.', //description
                     'https://github.com/olivianicholls/portfolio', //github link
                     'https://olivianicholls.github.io/portfolio/', // live link
                     'fas fa-desktop', // image source
